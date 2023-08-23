@@ -59,5 +59,5 @@ def check(text):
 
 
 if __name__ == "__main__":
-    text = st.text_area("This tool allows sentiment analysis (on the scale positive, neutral, negative) of various opinions about Circular Economy in the Construction Industry. If you would like to check one, please enter the text in the box below. Please make sure it does not exceed 200 words. Should you have any questions, please address them to aidana.tleuken@nu.edu.kz. This webpage is prepared in the framework of research article [add webpage after published]",)
+    text = st.text_area("This tool allows sentiment analysis (on the scale positive, neutral, negative) of various opinions about Circular Economy in the Construction Industry. If you would like to check one, please enter the text in the box below. The model will present you a percentage of the input being positive, neutral, or negative. Please make sure it does not exceed 200 words. Should you have any questions, please address them to aidana.tleuken@nu.edu.kz. This webpage is prepared in the framework of research article [add webpage after published]. ",)
     btn = st.button("Click me", on_click=check, args=(text,), disabled=DISABLED)
